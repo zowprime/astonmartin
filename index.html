@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="image" src="aston-martin.png">
+      </a-assets>
+
+      <a-entity id="vroum" gltf-model="./aston_martin_valkyrie/scene.gltf" position="0 0 0"></a-entity>
+
+      <a-camera position="0 1.7 0">
+        <a-cursor color=""white></a-cursor>
+      </a-camera>
+
+      <a-image src="#image" position="0 1.7 -3" height="10px" width="17px">
+
+      </a-image>
+      <a-entity environment="preset: dream; groundColor: #445; grid: cross"></a-entity>
+    </a-scene>
+  </body>
+</html>
